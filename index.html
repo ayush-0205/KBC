@@ -73,15 +73,15 @@ levels = ["1K","2K","3K","5K","10K","20K","40K","80K","160K","320K","640K","1.25
 </p>
    <p> reply = input("Enter the option (a-d) or Enter 0(Zero) for quit : ")</p>
     
-    if reply == "0" and question == questions[i]:
+  <p>  if reply == "0" and question == questions[i]:
         print("You have quit tha game")
         if i==0:
             print("Your take home money is Rs. 0\n")
         elif i>0 and i<=15:
             print(f"Your take home money is Rs. {levels[i-1]}\n")
-        break
+        break</p>
     
-    if reply == "d" and question == questions[0]:
+   <p> if reply == "d" and question == questions[0]:
         print(f"Congrates!!, You have won Rs. {levels[i]}\n")
     elif reply == "a" and question == questions[1]:
         print(f"Congrates!!, You have won Rs. {levels[i]}\n")
@@ -152,19 +152,19 @@ levels = ["1K","2K","3K","5K","10K","20K","40K","80K","160K","320K","640K","1.25
         if question == questions[14]:
             print("Correct option is d !\n")
         if question == questions[15]:
-            print("Correct option is c !\n")          
+            print("Correct option is c !\n")     </p>     
             
-            if i<=4:
-                print("Your take home money is Rs. 0\n")
-            elif i>=5 and i<=9:
-                print("Your take home money is Rs. 10k\n")
-            elif i>=10 and i<=14:
-                print("Your take home money is Rs. 320k\n")   
+           <p> if i<=4:
+                print("Your take home money is Rs. 0\n")</p>
+           <p> elif i>=5 and i<=9:
+                print("Your take home money is Rs. 10k\n")</p>
+           <p>elif i>=10 and i<=14:
+                print("Your take home money is Rs. 320k\n") 
             elif i==15:
-                print("Your take home money is Rs. 10M\n")
-        break
+                print("Your take home money is Rs. 10M\n")</p>
+     <p>   break
    
- print("Thanks For Playing !!\n")
+ print("Thanks For Playing !!\n")</p>
              
 
 </body>
