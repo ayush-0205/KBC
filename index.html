@@ -1,14 +1,18 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>
- <body>
- <p>
-     questions = [
+    <title>KBC Game</title>
+</head>
+<body>
+
+<h1>Kaun Banega Crorepati</h1>
+
+<p>questions = [
     
     ["Q1. Besides Sachin Tendulkar, who is the only other Indian cricketer to have scored over 13,000 runs in test cricket?",
-     "Virat Kohli", "Sunil Gavaskar", "VVS Laxman", "Rahul Dravid", 4],
+     "Virat Kohli", "Sunil Gavaskar", "VVS Laxman", "Rahul Dravid", 4],</p>
     
-    ["Q2. Ranthambore, Sariska and Keoladeo Ghana are all names of what?",
+  <p>  ["Q2. Ranthambore, Sariska and Keoladeo Ghana are all names of what?",
      "National Parks","Goosebumps","Mountains","Rivers", 1],
     
     ["Q3.  India's official entry to Oscars 2021, \"Jallikattu\" is, a film in which language?",
@@ -52,13 +56,13 @@
      "Stem","Buds","Leafs","Root", 4],
     
     ["Q16. Which process enables earthen pots (matkas) to keep water cool?",
-     "Absorption","Suction","Evaporation","Adiabatic Process", 3]
+     "Absorption","Suction","Evaporation","Adiabatic Process", 3]</p>
 
-]
+<p>]
 
-levels = ["1K","2K","3K","5K","10K","20K","40K","80K","160K","320K","640K","1.25M","2.5M","5M","10M","70M"]
+levels = ["1K","2K","3K","5K","10K","20K","40K","80K","160K","320K","640K","1.25M","2.5M","5M","10M","70M"]</p>
 
-for i in range(0,len(questions)):
+<p>for i in range(0,len(questions)):
     question = questions[i]
     print(f"\nQuestion for Rs. {levels[i]}")
     print(f"{question[0]}")
@@ -66,8 +70,8 @@ for i in range(0,len(questions)):
     print(f"b. {question[2]}")
     print(f"c. {question[3]}")
     print(f"d. {question[4]}")
-    
-    reply = input("Enter the option (a-d) or Enter 0(Zero) for quit : ")
+</p>
+   <p> reply = input("Enter the option (a-d) or Enter 0(Zero) for quit : ")</p>
     
     if reply == "0" and question == questions[i]:
         print("You have quit tha game")
@@ -161,8 +165,7 @@ for i in range(0,len(questions)):
         break
    
  print("Thanks For Playing !!\n")
-</p>
+             
+
 </body>
-</title>
-</head>
 </html>
