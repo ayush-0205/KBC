@@ -1,0 +1,158 @@
+questions = [
+    
+    ["Q1. Besides Sachin Tendulkar, who is the only other Indian cricketer to have scored over 13,000 runs in test cricket?",
+     "Virat Kohli", "Sunil Gavaskar", "VVS Laxman", "Rahul Dravid", 4],
+    
+    ["Q2. Ranthambore, Sariska and Keoladeo Ghana are all names of what?",
+     "National Parks","Goosebumps","Mountains","Rivers", 1],
+    
+    ["Q3.  India's official entry to Oscars 2021, \"Jallikattu\" is, a film in which language?",
+     "Hindi","Punjabi","Kannada","Malayalam", 4],
+    
+    ["Q4. In terms of production, which of these is the largest train coach manufacturing unit in the world?",
+     "Integral Coach Factory,Bangaluru","Integral Coach Factory,Mumbai",
+     "Integral Coach Factory,Chennai","Integral Coach Factory,Kolkata", 3],
+    
+    ["Q5. In 2020, Louise Gluck won the Nobel Prize in which category?",
+     "Music","Sports","Literature","Dance", 3],
+    
+    ["Q6. Which of the following companies was originally started as a loom manufacturing unit in 1909?",
+     "Suzuki", "CEAT", "Honda", "Mercedes", 1],
+    
+    ["Q7. In 1994, who became the winner of the first-ever Filmfare R D Burman Award for New Music Talent?",
+     "Udit Narayan","A.R. Rehman", "Lata Mangeskar", "Raju Burman", 2],
+    
+    ["Q8. What colour did Lord Shiva's throat turn into when he drank the deadly poison during Samudra Manthan?",
+     "Red","Yellow","Blue","Black", 3],
+    
+    ["Q9. What is the profession of Kabir in the film Kabir Singh?",
+     "Engineer","Cricketor","Athlete","Doctor", 4],
+    
+    ["Q10. Which of these national parks is named after the river that flows through the park?",
+     "Pench","Tadoba","Vrindavan","Wildera", 1],
+    
+    ["Q11. Which state is the largest producer of sugarcane in India?",
+     "Maharastra","Karnataka","Madhya Pradesh","Uttar Pradesh", 4],
+    
+    ["Q12. Which of these colors when mixed with red will produce the color orange?",
+     "Voilet","Green","Orange","Yellow", 4],
+    
+    ["Q13. Which of these is an ashram set up by Gandhiji set up near Wardha in Maharashtra?",
+     "Sri Aurobindo Ashram", " Parmarth Niketan Ashram", "Sevagram", "Sivananda Ashram", 3],
+    
+    ["Q14. Who of the following personalities is not married to a sports person?",
+     "Anushka Sharma","Sakshi Singh Rawat","Mahesh Bhupathi","Sharmila Tagore", 3],
+    
+    ["Q15. Which part of the plant absorbs water and nutrients from the soil?",
+     "Stem","Buds","Leafs","Root", 4],
+    
+    ["Q16. Which process enables earthen pots (matkas) to keep water cool?",
+     "Absorption","Suction","Evaporation","Adiabatic Process", 3]
+
+]
+
+levels = ["1K","2K","3K","5K","10K","20K","40K","80K","160K","320K","640K","1.25M","2.5M","5M","10M","70M"]
+
+for i in range(0,len(questions)):
+    question = questions[i]
+    print(f"\nQuestion for Rs. {levels[i]}")
+    print(f"{question[0]}")
+    print(f"a. {question[1]}")
+    print(f"b. {question[2]}")
+    print(f"c. {question[3]}")
+    print(f"d. {question[4]}")
+    
+    reply = input("Enter the option (a-d) or Enter 0(Zero) for quit : ")
+    
+    if reply == "0" and question == questions[i]:
+        print("You have quit tha game")
+        if i==0:
+            print("Your take home money is Rs. 0\n")
+        elif i>0 and i<=15:
+            print(f"Your take home money is Rs. {levels[i-1]}\n")
+        break
+    
+    if reply == "d" and question == questions[0]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "a" and question == questions[1]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "d" and question == questions[2]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "c" and question == questions[3]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "c" and question == questions[4]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}")
+        if i==4:
+            print("Your take home money is Rs. 10k\n")
+    elif reply == "a" and question == questions[5]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "b" and question == questions[6]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "c" and question == questions[7]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "d" and question == questions[8]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "a" and question == questions[9]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}")
+        if i==9:
+            print("Your take home money is Rs. 320k\n")
+    elif reply == "d" and question == questions[10]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "d" and question == questions[11]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "c" and question == questions[12]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "c" and question == questions[13]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "d" and question == questions[14]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}\n")
+    elif reply == "c" and question == questions[15]:
+        print(f"Congrates!!, You have won Rs. {levels[i]}")
+        if i==4:
+            print("Your take home money is Rs. 70M\n")
+    else:
+        print("Better Luck Next Time :)")
+        if question == questions[0]:
+            print("Correct option is d !\n")
+        if question == questions[1]:
+            print("Correct option is a !\n")
+        if question == questions[2]:
+            print("Correct option is d !\n")
+        if question == questions[3]:
+            print("Correct option is c !\n") 
+        if question == questions[4]:
+            print("Correct option is c !\n")
+        if question == questions[5]:
+            print("Correct option is a !\n")
+        if question == questions[6]:
+            print("Correct option is b !\n")
+        if question == questions[7]:
+            print("Correct option is c !\n")
+        if question == questions[8]:
+            print("Correct option is d !\n")
+        if question == questions[9]:
+            print("Correct option is a !\n")
+        if question == questions[10]:
+            print("Correct option is d !\n")
+        if question == questions[11]:
+            print("Correct option is d !\n")
+        if question == questions[12]:
+            print("Correct option is c !\n")
+        if question == questions[13]:
+            print("Correct option is c !\n")
+        if question == questions[14]:
+            print("Correct option is d !\n")
+        if question == questions[15]:
+            print("Correct option is c !\n")          
+            
+            if i<=4:
+                print("Your take home money is Rs. 0\n")
+            elif i>=5 and i<=9:
+                print("Your take home money is Rs. 10k\n")
+            elif i>=10 and i<=14:
+                print("Your take home money is Rs. 320k\n")   
+            elif i==15:
+                print("Your take home money is Rs. 10M\n")
+        break
+   
+ print("Thanks For Playing !!\n")
